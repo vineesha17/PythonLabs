@@ -1,10 +1,10 @@
 import sqlite3
 
-# Connect to database
+
 conn = sqlite3.connect("student_record.db")
 cursor = conn.cursor()
 
-# Create student table
+
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS student (
         Enrollment INTEGER PRIMARY KEY,
@@ -12,7 +12,7 @@ cursor.execute('''
     )
 ''')
 
-# Create student_subject table
+
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS student_subject (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
